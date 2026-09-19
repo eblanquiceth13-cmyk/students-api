@@ -5,7 +5,7 @@ app = fastAPI(title="students-api", version=APP_VERSION)
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "healthy"}
 
 @app.get("/students")
 def list_students():
